@@ -1,0 +1,134 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Blinker', sans-serif;
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Typography */
+
+.main-title {
+  font-size: 1.75rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.main-body {
+  line-height: 1.6;
+}
+
+.time {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.minute {
+  font-size: 1.25rem;
+}
+
+button {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* Layout */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #6a5740;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+img {
+  flex-basis: 250px;
+}
+
+
+.main {
+  padding: 2em;
+  color: white;
+}
+
+.main-body {
+  opacity: 0.8;
+  padding-bottom: 2em;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-info p {
+  margin: 0;
+}
+
+.info-time {
+  opacity: 0.8;
+}
+
+button {
+  opacity: 0.8;
+  background-color: #5f8771;
+  padding: 0.4em 1em;
+  border-radius: 2px;
+  transition: transform 250ms;
+}
+
+button:hover,
+button:focus {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* media query */
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  .main {
+    width: 60%;
+  }
+}
