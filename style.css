@@ -125,7 +125,7 @@ button:focus {
 
 /* media query */
 
-@media (min-width: 700px) {
+@media (min-width: 670px) {
   .container {
     max-width: 700px;
     grid-template: 1em auto auto 150px 1em / 200px auto auto 0px;
